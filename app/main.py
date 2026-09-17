@@ -13,7 +13,7 @@ def hello(name: str):
 
 @app.route("/health", methods=["GET"])
 def health():
-    """Health check endpoint for load balancer probes."""
+    """Return a healthy-status JSON response for load balancer probes."""
     return jsonify({"status": "healthy"})
 
 
